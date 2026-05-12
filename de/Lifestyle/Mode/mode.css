@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+/* Section Styles */
+section {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+
+/* Für das Container-Element der Mode-Sektion */
+.mode-content {
+  display: flex;
+}
+
+/* Für das Bild in der Mode-Sektion */
+.mode-image img {
+  width: 100%; /* 100% Breite des Containers */
+  height: auto; /* Automatische Höhe, um das Seitenverhältnis zu wahren */
+  object-fit: cover; /* Das Bild in den Container einpassen und zuschneiden, um das Seitenverhältnis zu wahren */
+  max-width: 250px; /* Optional: Maximalbreite des Bildes */
+}
+
+/* Für den Text in der Mode-Sektion */
+.mode-text {
+  padding-left: 20px; /* Optional: Abstand zwischen Bild und Text */
+  flex: 1; /* Der Text nimmt den verbleibenden Platz im Container ein */
+}
+
+
+
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 1em;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .mode-content {
+    flex-direction: column; /* Inhalt untereinander anordnen */
+  }
+
+  .mode-text {
+    padding-left: 0;
+    margin-top: 10px; /* Abstand zwischen Bild und Text auf mobilen Geräten */
+  }
+
+  h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .mode-content {
+    flex-direction: column;
+    align-items: center; /* Zentriere den Inhalt auf kleineren Bildschirmen */
+  }
+
+  .mode-image img {
+    max-width: 100%; /* Bild füllt den Container vollständig aus */
+    margin-bottom: 15px; /* Abstand unter dem Bild */
+  }
+
+  .mode-text {
+    padding-left: 0;
+    margin-top: 0;
+    text-align: center; /* Text zentrieren */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}

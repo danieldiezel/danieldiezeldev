@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+/* Style for the navigation bar container */
+nav {
+  background-color: #333;
+  padding: 1em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+    /* Add a black background color to the top navigation */
+    .topnav {
+        display: flex;
+      }
+  
+      /* Style the links inside the navigation bar */
+      .topnav a {
+        text-decoration: none;
+        color: white;
+        padding: 10px 15px;
+      }
+  
+      /* Change the color of links on hover */
+
+      .topnav a.active {
+        background-color: #04AA6D;
+      }
+  
+      /* Add a color to the active/current link */
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+  
+      /* Add snowflake styles */
+      .snowflake {
+        position: fixed;
+        top: -10px;
+        z-index: 9999;
+        font-size: 24px;
+        color: #fff;
+        user-select: none;
+        pointer-events: none;
+        animation: snow 5s linear infinite;
+      }
+  
+      @keyframes snow {
+        0% {
+          transform: translateY(-100%);
+        }
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+
+  header {
+    background-color: #555;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .video-container {
+    text-align: center;
+  }
+  
+  video {
+    max-width: 100%;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #555;
+  }
+  
+  img {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Mobile Styles */
+@media screen and (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  nav ul li a {
+      font-size: 1em;
+  }
+
+  header {
+      flex-direction: column;
+      padding: 20px;
+  }
+
+  main {
+      padding: 15px;
+  }
+
+  .content {
+      margin-top: 15px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  p {
+      font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+      padding: 15px;
+  }
+
+  nav ul li a {
+      font-size: 0.9em;
+      padding: 10px;
+  }
+
+  .topnav {
+      flex-direction: column;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  p {
+      font-size: 0.9em;
+  }
+
+  main {
+      padding: 10px;
+  }
+
+  footer {
+      padding: 15px;
+  }
+}

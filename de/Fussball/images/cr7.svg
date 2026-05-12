@@ -1,0 +1,11 @@
+<svg width="169" height="30" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="svg_3_blur">
+   <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <text filter="url(#svg_3_blur)" transform="matrix(1.08384 0 0 1.21189 -0.84225 13.198)" stroke="null" xml:space="preserve" text-anchor="start" font-family="Noto Sans JP" font-size="24" stroke-width="0" id="svg_3" y="8.33333" x="11.33333" fill="#ffffff">Daniel Diezel</text>
+ </g>
+</svg>
