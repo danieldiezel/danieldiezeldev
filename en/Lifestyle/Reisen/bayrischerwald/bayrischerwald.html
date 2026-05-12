@@ -1,57 +1,90 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Lifestyle - Bayrischer Wald</title>
-  <link rel="stylesheet" href="/en/lifestyle/reisen/BayrischerWald/bayrischerwald.css">
+  <meta name="description" content="Bavarian Forest travel tips – accommodation, restaurant, attractions and hidden gems by Daniel Diezel.">
+  <title>Bavarian Forest – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bayrischerwald.css">
 </head>
 <body>
 
   <nav>
     <ul>
-      <li><a href="/en/home.html">Home</a></li>
-      <li><a href="/en/Sport/Sport.html">Sport</a></li>
-      <li><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/en/Actor/appearance.html">Actor appearances</a></li>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/en/Lifestyle/Reisen/travel.html">← Travel</a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
     </ul>
   </nav>
 
-  <section id="berlin">
-    <h2>Bayrischer Wald</h2>
-    <div class="city-details">
-      <h3>Accommodation</h3>
-      <p>
-        <strong>BERGlässig Hotel Bodenmais</strong>
-        From my personal perspective, the BERGlässig Hotel in Bodenmais is the ideal accommodation, as it offers a truly relaxing and unforgettable stay with its unique charm and cozy atmosphere. Its picturesque location in the Bavarian Forest, combined with excellent service and comfortable amenities, makes it the perfect retreat for anyone seeking both tranquility and adventure.
-        <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="Accommodation in Berlin">
-      </p>
+  <div class="page-header">
+    <div class="page-tag">Lifestyle · Travel</div>
+    <h1>Bavarian Forest</h1>
+  </div>
 
-      <h3>Restaurant Tipp</h3>
-      <p>
-        <strong>Eisensteiner Hütte</strong>
-        I had an unforgettable experience at the Eisensteiner Hütte. The ambiance was simply enchanting, with a breathtaking view over the valley and the summit of the Arber. The cozy atmosphere and rustic design of the hut contributed to a unique experience. The food was equally delicious, featuring regional specialties prepared to perfection. Overall, it was a truly impressive and highly recommended experience that I would gladly repeat.
-        <img src="/de/Lifestyle/images/restaurant_bayrischerwald.jpg" alt="Restaurant in Berlin">
-      </p>
-
-      <h3>Attraction</h3>
-      <p>
-        <strong>Silberbergbad</strong>
-        The Silberbergbad in Bodenmais is an impressive destination, offering both a relaxing atmosphere and a stunning view of the Silberberg. The wide range of wellness options and the spacious sauna area provide a wonderful opportunity to unwind and escape everyday stress. Especially noteworthy is the view of the Silberberg, which makes the experience even more special. The sauna and wellness areas are perfectly designed to offer guests a moment of peace and recovery – an unforgettable experience for body and soul.
-        <img src="/de/Lifestyle/images/attraction_bayrischerwald.jpg" alt="Attraction in Berlin">
-      </p>
-
-      <h3>Hidden Gem</h3>
-      <p>
-        <strong>Skiing at the Arber</strong>
-        We had a fantastic time skiing at the Großer Arber, which impresses with a variety of diverse slopes and trails. Particularly noteworthy are the challenging runs for all skill levels, the toboggan run for the whole family, and the exciting time trial course for those wanting to test their speed. There’s also a parkour trail for those looking for fun beyond the traditional slopes. An unforgettable experience for skiers and winter sports enthusiasts of all kinds – highly recommended, especially for families and adventure seekers.
-        <img src="/de/Lifestyle/images/gem_bayrischerwald.jpg" alt="Hidden Gem in Berlin">
-      </p>
+  <div class="tips">
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="Accommodation Bavarian Forest">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Accommodation</span>
+        <h3>BERGlässig Hotel Bodenmais</h3>
+        <p>The BERGlässig Hotel in Bodenmais is the ideal accommodation – its unique charm and cozy atmosphere offer a truly relaxing and unforgettable stay. The picturesque location in the Bavarian Forest, excellent service and comfortable amenities make it the perfect retreat.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/restaurant_bayrischerwald.jpg" alt="Restaurant Bavarian Forest">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Restaurant Tip</span>
+        <h3>Eisensteiner Hütte</h3>
+        <p>An unforgettable experience at the Eisensteiner Hütte – enchanting ambiance, a breathtaking view over the valley and the summit of the Arber, regional specialties prepared to perfection. An experience I would gladly repeat.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/attraction_bayrischerwald.jpg" alt="Attraction Bavarian Forest">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Attraction</span>
+        <h3>Silberbergbad</h3>
+        <p>The Silberbergbad in Bodenmais offers both a relaxing atmosphere and a stunning view of the Silberberg. The wide range of wellness options and the spacious sauna area provide the perfect opportunity to unwind and escape everyday stress.</p>
+      </div>
+    </div>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/gem_bayrischerwald.jpg" alt="Hidden Gem Bavarian Forest">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Hidden Gem</span>
+        <h3>Skiing at the Arber</h3>
+        <p>A fantastic time skiing at the Großer Arber – diverse slopes for all skill levels, a toboggan run for the whole family and an exciting timed race course. Highly recommended for families and adventure seekers alike.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - My Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
