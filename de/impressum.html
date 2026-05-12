@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="impressum.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="logo"><a href="/de/home.html">Daniel<span>.</span></a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Sport/Sport.html">Sport</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
+    </ul>
+  </nav>
+
+  <main class="imprint-wrap">
+    <div class="page-tag">Rechtliches</div>
+    <h1>Impressum</h1>
+
+    <section class="imprint-section">
+      <h2>Angaben gemäß § 5 TMG</h2>
+      <p>
+        Daniel Diezel<br>
+        Adresse auf Anfrage
+      </p>
+    </section>
+
+    <section class="imprint-section">
+      <h2>Kontakt</h2>
+      <p>E-Mail: <a href="mailto:management@diezeldaniel.de">management@diezeldaniel.de</a></p>
+    </section>
+
+    <section class="imprint-section">
+      <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
+      <p>Daniel Diezel</p>
+    </section>
+
+    <section class="imprint-section">
+      <h2>Haftungsausschluss</h2>
+      <h3>Haftung für Inhalte</h3>
+      <p>Als Diensteanbieter bin ich gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+      <h3>Haftung für Links</h3>
+      <p>Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+      <h3>Urheberrecht</h3>
+      <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel<span>.</span></div>
+      <div class="social-links">
+        <a class="social-link" href="https://www.youtube.com/@diezel.daniel" target="_blank" rel="noopener">▶ YouTube</a>
+        <a class="social-link" href="https://www.instagram.com/diezel.daniel" target="_blank" rel="noopener">◎ Instagram</a>
+        <a class="social-link" href="https://www.tiktok.com/@diezel.daniel" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">&copy; <span id="copy-year"></span> Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
+  </footer>
+
+<script>document.getElementById("copy-year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
