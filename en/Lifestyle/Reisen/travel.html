@@ -1,50 +1,71 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Lifestyle - Travel</title>
-  <link rel="stylesheet" href="/en/lifestyle/reisen/travel.css">
+  <meta name="description" content="Daniel's travel adventures – cities, experiences and unforgettable moments.">
+  <title>Travel – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="travel.css">
 </head>
 <body>
 
-
   <nav>
     <ul>
-      <li><a href="/en/home.html">Home</a></li>
-      <li><a href="/en/lifestyle/reisen/travel.html">Reisen</a></li>
-      <li><a href="/en/lifestyle/events/events.html">Events</a></li>
-      <li><a href="/en/lifestyle/mode/mode.html">Mode</a></li>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/en/Lifestyle/life.html">← Lifestyle</a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Sport/Sport.html">Sports</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
     </ul>
   </nav>
-  <h1>Welcome to my Lifestyle - Travel</h1>
-  <section id="reisen">
-    <h2>Explore Cities</h2>
-    <div class="city-list">
-      <div class="city-item">
-        <a href="/en/lifestyle/reisen/denhaag/denhaag.html">
-          <img src="/en/Lifestyle/images/accommodation_denhaag.jpg" alt="Den Haag">
-          <h3>Den Haag</h3>
-        </a>
+
+  <div class="page-header">
+    <div class="page-tag">Lifestyle · Travel</div>
+    <h1>Explore the <em>Cities</em></h1>
+  </div>
+
+  <div class="city-grid">
+    <a class="city-card" href="/en/Lifestyle/Reisen/denhaag/denhaag.html">
+      <img src="/en/Lifestyle/images/accommodation_denhaag.jpg" alt="Den Haag">
+      <div class="city-card-overlay"></div>
+      <div class="city-card-label">
+        <h3>Den Haag</h3>
+        <span class="city-card-arrow">Explore →</span>
       </div>
-      <div class="city-item">
-        <a href="/en/lifestyle/reisen/berlin/berlin.html">
-          <img src="/en/Lifestyle/images/accommodation_berlin.jpg" alt="Berlin">
-          <h3>Berlin</h3>
-        </a>
+    </a>
+    <a class="city-card" href="/en/Lifestyle/Reisen/berlin/berlin.html">
+      <img src="/en/Lifestyle/images/accommodation_berlin.jpg" alt="Berlin">
+      <div class="city-card-overlay"></div>
+      <div class="city-card-label">
+        <h3>Berlin</h3>
+        <span class="city-card-arrow">Explore →</span>
       </div>
-      <div class="city-item">
-        <a href="/en/lifestyle/reisen/bayrischerwald/bayrischerwald.html">
-          <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="BayrischerWald">
-          <h3>Bayrischer Wald</h3>
-        </a>
+    </a>
+    <a class="city-card" href="/en/Lifestyle/Reisen/bayrischerwald/bayrischerwald.html">
+      <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="Bayrischer Wald">
+      <div class="city-card-overlay"></div>
+      <div class="city-card-label">
+        <h3>Bavarian Forest</h3>
+        <span class="city-card-arrow">Explore →</span>
       </div>
-      <!-- Weitere Städte hier hinzufügen -->
-    </div>
-  </section>
+    </a>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
