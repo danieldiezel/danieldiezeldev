@@ -3,70 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniels Schauspielkarriere</title>
+  <meta name="description" content="Daniels Schauspielkarriere – Auftritte, Filmografie und mehr.">
+  <title>Schauspiel – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-
   <nav>
     <ul>
-      <li><a href="/de/home.html">Home</a></li>
-      <li><a href="/de/Sport/Sport.html">Sport</a></li>
-      <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Sport/Sport.html">Sport</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
     </ul>
   </nav>
-  <header>
-    <h1>Daniels Schauspielkarriere</h1>
+
+  <header class="page-header">
+    <h1>Schauspielkarriere</h1>
+    <p>Daniel ist ein aufstrebender Schauspieler mit tiefer Leidenschaft für die darstellenden Künste. Sein Ziel: komplexe Charaktere zum Leben erwecken und das Publikum mit Ausdruckskraft und Vielseitigkeit zu fesseln.</p>
   </header>
-  <main>
-    <section id="about">
-      <h2>About Daniel</h2>
-      <p>Daniel ist ein aufstrebender Schauspieler mit einer tiefen Leidenschaft für die darstellenden Künste, die ihn seit seiner Kindheit begleitet. Schon früh träumte er davon, auf der großen Leinwand zu erscheinen und Emotionen durch sein Talent zu wecken. Seine Begeisterung für Theater und Film führte ihn dazu, eine anspruchsvolle Ausbildung zu absolvieren und sein Handwerk kontinuierlich zu verfeinern. Mit jeder Aufführung strebt Daniel danach, komplexe Charaktere darzustellen und das Publikum mit seiner Ausdruckskraft und Vielseitigkeit zu fesseln. Sein Ziel ist es, Geschichten zum Leben zu erwecken und unvergessliche Momente für die Zuschauer zu schaffen. Entschlossen, seinen Platz in der Filmindustrie zu finden, ist Daniel fest entschlossen, seine Träume in die Realität umzusetzen. </p>
+
+  <main class="actor-main">
+    <section class="actor-section">
+      <h2>Über Daniel</h2>
+      <p>Schon früh träumte Daniel davon, auf der großen Leinwand zu erscheinen. Seine Begeisterung für Theater und Film führte ihn dazu, sein Handwerk kontinuierlich zu verfeinern – mit jeder Aufführung strebt er danach, die Geschichten zum Leben zu erwecken, die das Publikum bewegen.</p>
     </section>
-    
-    <section id="filmography">
+
+    <section class="actor-section">
       <h2>Werbespot Auftritte</h2>
-      <ul>
-        <li><a href="/de/Actor/werbung/tilly.html"><strong>Hauptrolle</strong> - "Autofahrer" (2024) </a></li>
+      <ul class="film-list">
+        <li>
+          <a href="/de/Actor/werbung/tilly.html">
+            <strong>Hauptrolle</strong>
+            "Autofahrer" (2024) – Tilly Hedrich GmbH
+          </a>
+        </li>
       </ul>
     </section>
-    
-    <section id="filmography">
+
+    <section class="actor-section">
+      <h2>Serien Auftritte</h2>
+      <ul class="film-list">
+        <li>
+          <a href="/de/Actor/serien/vss25N.html">
+            <strong>Nebenrolle</strong>
+            "Bauarbeiter" (2025) – Verstehen Sie Spaß? · ARD
+          </a>
+        </li>
+        <li>
+          <a href="/de/Actor/serien/vss25H.html">
+            <strong>Hauptrolle</strong>
+            "Ballonlieferant" (2025) – Verstehen Sie Spaß? · ARD
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="actor-section">
       <h2>Filmography</h2>
-      <ul>
-      </ul>
+      <p class="film-empty">Mehr Projekte in Kürze.</p>
     </section>
 
-    <section id="filmography">
-        <h2>Serien Auftritte</h2>
-        <ul>
-        <!--     <li><strong>Beste Hauptrolle</strong> - "Der Traumtänzer" (2023) - Filmfest München</li> -->
-        <li><a href="/de/Actor/serien/vss25N.html"><strong>Nebenrolle</strong> - Verstehen Sie Spass? (2025) - ARD</a></li>
-        <li><a href="/de/Actor/serien/vss25H.html"><strong>Hauptrolle</strong> - Verstehen Sie Spass? (2025) - ARD</a></li>
-        </ul>
-      </section>
-
-    <section id="awards">
+    <section class="actor-section">
       <h2>Auszeichnungen</h2>
-      <ul>
-      </ul>
+      <p class="film-empty">Auszeichnungen folgen.</p>
     </section>
-
   </main>
 
-
   <footer>
-    <h3>Folge mir auf Social Media</h3>
-    <a href="https://www.youtube.com/@diezel.daniel"><img src="/de/images/youtube.jpg" alt="YouTube"></a>
-    <a href="https://www.instagram.com/@diezel.daniel"><img src="/de/images/daniel.png" alt="Instagram"></a>
-    <a href="https://www.tiktok.com/@diezel.daniel"><img src="/de/images/tiktok.jpg" alt="TikTok"></a>
-  </footer>
-  <footer>
-    <p>&copy; 2025 - Daniels Schauspielkarriere</p>
-    
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 </body>
 </html>

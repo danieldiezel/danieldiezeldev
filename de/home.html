@@ -1,74 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daniel Diezel – Fußball, Schauspiel, Lifestyle. Offizielle persönliche Website.">
   <title>Daniel Diezel</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/de/style.css">
 </head>
 <body>
   <nav>
     <ul>
-      <li><a href="/de/home.html">Home</a></li>
-      <li><a href="/de/Sport/Sport.html">Sport</a></li>
-      <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Sport/Sport.html">Sport</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
     </ul>
   </nav>
-  <div>
-  <h1>Willkommen auf Daniels Website</h1>
 
-  <p>Liebe Follower, <br><br>
-    Zuerst möchte ich meinen aufrichtigen Dank für eure großartige Unterstützung und Loyalität aussprechen. Vielen Dank, dass ihr Teil dieser wundervollen Reise seid und mich begleitet habt, während wir einen Meilenstein von über 400.000 Followern erreicht haben!
-    <br><br>
-    Ich möchte diese Gelegenheit nutzen, um euch mitzuteilen, dass ihr hier auf meiner Seite viel mehr erwarten könnt als nur flüchtige Einblicke in mein Leben. Ich freue mich darauf, tiefere Einblicke, persönliche Geschichten und Erlebnisse mit euch zu teilen, die uns auf einer noch intensiveren Ebene verbinden.
-    <br><br>
-    Eure Präsenz und euer Engagement bedeuten mir die Welt, und ich verspreche, weiterhin wertvollen Content zu liefern und eine einladende Community für uns alle zu schaffen, in der wir gemeinsam wachsen können.
-    <br><br>
-    Noch einmal vielen Dank, dass ihr Teil dieses unglaublichen Abenteuers seid. Auf viele weitere herzerwärmende Verbindungen, gemeinsame Erlebnisse und unvergessliche Momente!
-    <br><br>
-    Mit aufrichtiger Wertschätzung, <br><br>
-    Daniel</p>
-    
-    <div class="image-container">
-  <div class="image-box">
-    <a href="/de/Sport/Sport.html">
-      <img src="/de/Images/Fussball.jpeg" alt="Sport Image">
-      <div class="overlay">
-        <div class="text">Sport</div>
+  <section class="hero">
+    <div class="hero-tag">400K+ Followers</div>
+    <h1>Willkommen auf<br>Daniels Website</h1>
+    <p class="hero-text">
+      Liebe Follower, vielen Dank für eure großartige Unterstützung und Loyalität. Ihr habt mich auf einem unglaublichen Abenteuer begleitet – und das ist erst der Anfang.
+    </p>
+    <p class="hero-text">
+      Hier findet ihr tiefere Einblicke in mein Leben: Fußball, Schauspiel, Reisen und vieles mehr. Ich freue mich darauf, weiterhin mit euch zu wachsen und unvergessliche Momente zu teilen.
+    </p>
+    <p class="hero-sig">— Daniel</p>
+  </section>
+
+  <p class="section-label">Entdecke mehr</p>
+
+  <div class="cards-grid">
+    <a href="/de/Sport/Sport.html" class="card">
+      <img src="/de/images/Fussball.jpeg" alt="Sport">
+      <div class="card-overlay">
+        <div class="card-title">Sport</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+    <a href="/de/Lifestyle/life.html" class="card">
+      <img src="/de/images/lifestyle.png" alt="Lifestyle">
+      <div class="card-overlay">
+        <div class="card-title">Lifestyle</div>
+        <div class="card-arrow">→</div>
+      </div>
+    </a>
+    <a href="/de/Actor/appearance.html" class="card">
+      <img src="/de/images/actor.jpg" alt="Schauspiel">
+      <div class="card-overlay">
+        <div class="card-title">Schauspiel</div>
+        <div class="card-arrow">→</div>
       </div>
     </a>
   </div>
 
-  <div class="image-box">
-    <a href="/de/Lifestyle/life.html">
-      <img src="/de/images/nfl.png" alt="Lifestyle Image">
-      <div class="overlay">
-        <div class="text">Lifestyle</div>
-      </div>
-    </a>
-  </div>
-
-  <div class="image-box">
-    <a href="/de/Actor/appearance.html">
-      <img src="/de/images/actor.jpg" alt="Acting Image">
-      <div class="overlay">
-        <div class="text">Schauspiel</div>
-      </div>
-    </a>
-  </div>
-</div>
-    
-  </div>
   <footer>
-    <h3>Folge mir auf Social Media</h3>
-    <a href="https://www.youtube.com/@diezel.daniel"><img src="/de/images/youtube.jpg" alt="YouTube"></a>
-    <a href="https://www.instagram.com/@diezel.daniel"><img src="/de/images/daniel.png" alt="Instagram"></a>
-    <a href="https://www.tiktok.com/@diezel.daniel"><img src="/de/images/tiktok.jpg" alt="TikTok"></a>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
-  <footer>
-    <p>&copy; 2025 - Daniel Diezel</p>
-  </footer>
-
 </body>
 </html>
