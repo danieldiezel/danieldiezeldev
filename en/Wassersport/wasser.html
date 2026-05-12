@@ -1,56 +1,101 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Watersports Paradise</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daniel's watersports adventures – surfing, stand-up paddle and more on the water.">
+  <title>Watersports – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-      <nav>
+
+  <nav id="navbar">
     <ul>
-      <li><a href="/en/home.html">Home</a></li>
-      <li><a href="/en/Fussball/index.html">Fussball</a></li>
-      <li><a href="/en/Wassersport/wasser.html">Watersports</a></li>
-      <li><a href="/en/Ski/ski.html">Skiing</a></li>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/en/Sport/Sport.html">← Sports</a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
     </ul>
   </nav>
-    <header>
-        <h1>Daniels's Paradise</h1>
-    </header>
 
-    <section id="home">
-        <h2>Welcome to Daniels Water Paradise</h2>
-        <p>Daniel loves Water. He enjoys every second when he is on his board.</p>
-    </section>
-
-  
-
-    <section id="events">
-    <div class="event-card">
-        <h3>Surfen </h3>
-        <img src="/en/images/surf.jpeg" alt="Ereignis 2">
- 
-        <p>Join Daniel on his surfing adventure in the North Sea. Experience the thrill of surfing and freedom on the water.</p>
+  <section class="hero">
+    <div class="waves">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C180,80 360,0 540,40 C720,80 900,0 1080,40 C1260,80 1440,0 1440,40 L1440,80 L0,80 Z" fill="rgba(10,10,10,0.4)"/>
+        <path d="M0,55 C200,20 400,70 600,50 C800,30 1000,65 1200,45 C1320,35 1380,50 1440,55 L1440,80 L0,80 Z" fill="rgba(10,10,10,0.6)"/>
+      </svg>
     </div>
-    <h2>"The Water is creating the best stories a human can imagine" - Daniel Diezel 2023</h2>
-    <div class="event-card">
-        <h3>Upcoming Event: Standup Paddle Tour</h3>
-        <img src="/en/images/standup.jpeg" alt="Ereignis 1">
+    <div class="hero-content">
+      <div class="hero-tag">Watersports &amp; Ocean</div>
+      <h1>Daniel's Water<em>Adventures</em></h1>
+      <p class="hero-quote">
+        The water creates the best stories<br>
+        a human can imagine.
+      </p>
+    </div>
+  </section>
 
-        <p>Join Daniel on an exhilarating stand-up paddle adventure as he takes on a 100 km journey along the coast. Experience the breathtaking beauty of the sea and witness firsthand the endurance and skill required to conquer such a challenging paddle. Don’t miss this incredible event where Daniel will showcase both his stamina and love for the open water.</p>
+  <section class="cards-section">
+    <p class="section-label">Adventures</p>
+
+    <div class="water-card">
+      <div class="water-card-img">
+        <img src="/de/images/surf.jpeg" alt="Surfing">
+      </div>
+      <div class="water-card-body">
+        <h3>Surfing</h3>
+        <p>
+          Join Daniel on his surfing adventure in the North Sea.
+          Experience the thrill of surfing and the freedom of riding
+          the waves – every wave a new feeling.
+        </p>
+      </div>
     </div>
 
-    <!-- Weitere Ereigniskarten hier hinzufügen -->
-</section>
+    <div class="water-card reverse">
+      <div class="water-card-img">
+        <img src="/de/images/standup.jpeg" alt="Stand-Up Paddle">
+      </div>
+      <div class="water-card-body">
+        <h3>Stand-Up Paddle Tour</h3>
+        <p>
+          A 100 km journey along the coast on a stand-up paddle board.
+          Experience the breathtaking beauty of the sea and the endurance
+          it takes to conquer such a challenging route.
+        </p>
+      </div>
+    </div>
+  </section>
 
+  <section class="quote-section">
+    <blockquote>
+      "The water creates the best stories a human can imagine."
+    </blockquote>
+    <cite>— Daniel Diezel, 2023</cite>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 Daniel Diezel. All rights reserved.</p>
-    </footer>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
+  </footer>
 
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
 </body>
-
 </html>
