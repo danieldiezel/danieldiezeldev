@@ -3,55 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Lifestyle - Bayrischer Wald</title>
-  <link rel="stylesheet" href="/de/lifestyle/reisen/BayrischerWald/bayrischerwald.css">
+  <meta name="description" content="Bayrischer Wald Reisetipps – Übernachtung, Restaurant, Sehenswürdigkeiten und Geheimtipps von Daniel Diezel.">
+  <title>Bayrischer Wald – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bayrischerwald.css">
 </head>
 <body>
 
   <nav>
     <ul>
-      <li><a href="/de/home.html">Home</a></li>
-      <li><a href="/de/Sport/Sport.html">Sport</a></li>
-      <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/de/Lifestyle/Reisen/travel.html">← Reisen</a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
     </ul>
   </nav>
 
-  <section id="berlin">
-    <h2>Bayrischer Wald</h2>
-    <div class="city-details">
-      <h3>Übernachtung</h3>
-      <p>
-        <strong>BERGlässig Hotel Bodenmais</strong>
-        Aus meiner persönlichen Perspektive ist das Berglässig Hotel in Bodenmais die ideale Unterkunft, da es mit seinem einzigartigen Charme und der gemütlichen Atmosphäre einen wirklich erholsamen und unvergesslichen Aufenthalt bietet. Die malerische Lage im Bayerischen Wald, kombiniert mit exzellentem Service und komfortablen Annehmlichkeiten, macht das Hotel zu einem perfekten Rückzugsort für alle, die sowohl Ruhe als auch Abenteuer suchen. 
-        <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="Accommodation in Berlin">
-      </p>
+  <div class="page-header">
+    <div class="page-tag">Lifestyle · Reisen</div>
+    <h1>Bayrischer Wald</h1>
+  </div>
 
-      <h3>Restaurant Tipp</h3>
-      <p>
-        <strong>Eisensteiner Hütte</strong>
-        Ich hatte ein unvergessliches Erlebnis in der Eisensteiner Hütte. Das Ambiente war einfach bezaubernd, mit einem atemberaubenden Blick über das Tal und auf den Gipfel des Arbers. Die gemütliche Atmosphäre und das rustikale Design der Hütte trugen zu einem einzigartigen Erlebnis bei. Das Essen war ebenso köstlich, mit regionalen Spezialitäten, die perfekt zubereitet wurden. Insgesamt war es ein wahrhaft beeindruckendes und sehr empfehlenswertes Erlebnis, das ich gerne wiederholen würde.   
-        <img src="/de/Lifestyle/images/restaurant_bayrischerwald.jpg" alt="Restaurant in Berlin">
-      </p>
-
-      <h3>Sehenswertes</h3>
-      <p>
-        <strong>Silberbergbad</strong>
-        Das Silberbergbad in Bodenmais ist ein beeindruckendes Ziel, das sowohl mit seiner erholsamen Atmosphäre als auch mit dem atemberaubenden Ausblick auf den Silberberg begeistert. Die vielfältigen Wellnessangebote und die großzügige Saunalandschaft bieten eine wunderbare Gelegenheit, sich zu entspannen und den Alltagsstress hinter sich zu lassen. Besonders hervorzuheben ist der Blick auf den Silberberg, der das Erlebnis noch einzigartiger macht. Die Sauna- und Wellnessbereiche sind perfekt darauf ausgerichtet, den Gästen einen Moment der Ruhe und Erholung zu bieten – ein unvergessliches Erlebnis für Körper und Geist.
-        <img src="/de/Lifestyle/images/attraction_bayrischerwald.jpg" alt="Attraction in Berlin">
-      </p>
-
-      <h3>Geheim Tipp</h3>
-      <p>
-        <strong>Skifahren am Arber</strong>
-        Wir hatten eine großartige Zeit beim Skifahren am Großen Arber, das mit einer Vielzahl an abwechslungsreichen Pisten und Strecken begeistert. Besonders hervorzuheben sind die anspruchsvollen Abfahrten für alle Könnerstufen, die Rodelstrecke für die ganze Familie und die spannende Zeitmessrennstrecke für alle, die ihre Geschwindigkeit testen möchten. Zudem gibt es eine Parkour-Strecke für alle, die sich auch abseits der klassischen Pisten austoben möchten. Ein unvergessliches Erlebnis für Skifahrer und Wintersportliebhaber aller Art – sehr zu empfehlen, besonders für Familien und sportliche Abenteuerlustige.
-        <img src="/de/Lifestyle/images/gem_bayrischerwald.jpg" alt="Hidden Gem in Berlin">
-      </p>
+  <div class="tips">
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/accommodation_bayrischerwald.jpg" alt="Unterkunft Bayrischer Wald">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Übernachtung</span>
+        <h3>BERGlässig Hotel Bodenmais</h3>
+        <p>Das Berglässig Hotel in Bodenmais ist die ideale Unterkunft – mit einzigartigem Charme und gemütlicher Atmosphäre bietet es einen wirklich erholsamen Aufenthalt. Die malerische Lage im Bayerischen Wald, exzellenter Service und komfortable Annehmlichkeiten machen es zum perfekten Rückzugsort.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/restaurant_bayrischerwald.jpg" alt="Restaurant Bayrischer Wald">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Restaurant Tipp</span>
+        <h3>Eisensteiner Hütte</h3>
+        <p>Ein unvergessliches Erlebnis in der Eisensteiner Hütte – atemberaubender Blick über das Tal und auf den Gipfel des Arbers. Die gemütliche Atmosphäre, das rustikale Design und die regionalen Spezialitäten machen es zu einem Erlebnis, das ich gerne wiederholen würde.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/attraction_bayrischerwald.jpg" alt="Sehenswürdigkeit Bayrischer Wald">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Sehenswertes</span>
+        <h3>Silberbergbad</h3>
+        <p>Das Silberbergbad in Bodenmais begeistert sowohl mit erholsamer Atmosphäre als auch atemberaubendem Ausblick auf den Silberberg. Die Wellnessangebote und die großzügige Saunalandschaft bieten eine wunderbare Gelegenheit, den Alltag hinter sich zu lassen.</p>
+      </div>
+    </div>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/gem_bayrischerwald.jpg" alt="Geheimtipp Bayrischer Wald">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Geheim Tipp</span>
+        <h3>Skifahren am Arber</h3>
+        <p>Wir hatten eine großartige Zeit beim Skifahren am Großen Arber – mit abwechslungsreichen Pisten, einer Rodelstrecke für die ganze Familie und einer spannenden Zeitmessrennstrecke. Ein unvergessliches Erlebnis für Skifahrer aller Könnerstufen.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
+
 </body>
 </html>

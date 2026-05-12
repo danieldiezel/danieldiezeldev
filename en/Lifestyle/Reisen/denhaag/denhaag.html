@@ -1,50 +1,90 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Lifestyle - Den Haag</title>
-  <link rel="stylesheet" href="/en/lifestyle/reisen/denhaag/denhaag.css">
+  <meta name="description" content="Den Haag travel tips – accommodation, restaurant, attractions and hidden gems by Daniel Diezel.">
+  <title>Den Haag – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="denhaag.css">
 </head>
 <body>
 
   <nav>
     <ul>
-      <li><a href="/en/home.html">Home</a></li>
-      <li><a href="/en/lifestyle/reisen/travel.html">Reisen</a></li>
-      <li><a href="/en/lifestyle/events/events.html">Events</a></li>
-      <li><a href="/en/lifestyle/mode/mode.html">Mode</a></li>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/en/Lifestyle/Reisen/travel.html">← Travel</a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
     </ul>
   </nav>
 
-  <section id="den_haag">
-    <h2>Den Haag</h2>
-    <div class="city-details">
-      <h3>Accommodation</h3>
-      <p><strong>The Penthouse Appartments</strong></p>
-      <p>For your accommodation in The Hague, I highly recommend The Hague Tower, The Penthouse. Situated in the tallest tower, this stunning property offers unparalleled panoramic views of the city. Prepare to be amazed as you gaze out over the beautiful skyline from the comfort of your living room. What sets this accommodation apart is the exclusive private cinema, where you can enjoy a cinematic experience like no other. Immerse yourself in luxury, convenience, and breathtaking sights at The Hague Tower, The Penthouse.</p>
-        
-      <img src="/en/Lifestyle/images/accommodation_denhaag.jpg" alt="Accommodation in Den Haag">
+  <div class="page-header">
+    <div class="page-tag">Lifestyle · Travel</div>
+    <h1>Den Haag</h1>
+  </div>
 
-      <h3>Restaurant Tip</h3>
-      <p><strong>De Pier Pannenkoeken and Grill</strong></p>
-      <p> This restaurant offers a super beautiful view of the sea and sunset. The fish served here is exceptionally delicious. The portions may be slightly smaller than expected, but considering the price, it is still worth it. Enjoy a memorable dining experience with a breathtaking view at De Pier Pannenkoeken.</p>
-      <img src="/en/Lifestyle/images/restaurant_denhaag.jpg" alt="Restaurant in Den Haag">
-
-      <h3>Attraction</h3>
-      <p><strong>Mauritstoren</strong></p>
-      <p>Visit the magnificent Mauritstoren in Den Haag. This huge and stunning building has a must-see courtyard. A guided tour inside is highly recommended as a secret tip. Don't miss out on this worthwhile experience.</p>
-      <img src="/en/Lifestyle/images/attraction_denhaag.jpg" alt="Attraction in Den Haag">
-
-      <h3>Hidden Gem</h3>
-      <p><strong>China Town</strong></p>
-      <p>For a unique and vibrant experience, make sure to visit China Town. This hidden gem is packed with local Chinese shops offering a wide variety of foods. Indulge in the delicious cuisine and soak up the lively atmosphere. Dining here is a must-try to truly catch the vibe of China Town.</p>
-      <img src="/en/Lifestyle/images/gem_denhaag.jpg" alt="Hidden Gem in Den Haag">
+  <div class="tips">
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/en/Lifestyle/images/accommodation_denhaag.jpg" alt="Accommodation Den Haag">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Accommodation</span>
+        <h3>The Penthouse Appartments</h3>
+        <p>For your accommodation in The Hague, I highly recommend The Hague Tower, The Penthouse. Situated in the tallest tower, this stunning property offers unparalleled panoramic views of the city. What sets it apart is the exclusive private cinema – an experience like no other, wrapped in luxury and breathtaking sights.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/en/Lifestyle/images/restaurant_denhaag.jpg" alt="Restaurant Den Haag">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Restaurant Tip</span>
+        <h3>De Pier Pannenkoeken and Grill</h3>
+        <p>This restaurant offers a beautiful view of the sea and sunset. The fish served here is exceptionally delicious. The portions may be slightly smaller than expected, but considering the price it is absolutely worth every cent.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/en/Lifestyle/images/attraction_denhaag.jpg" alt="Attraction Den Haag">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Attraction</span>
+        <h3>Mauritstoren</h3>
+        <p>Visit the magnificent Mauritstoren in Den Haag. This huge and stunning building has a must-see courtyard. A guided tour inside is highly recommended as a hidden tip – don't miss out on this worthwhile experience.</p>
+      </div>
+    </div>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/en/Lifestyle/images/gem_denhaag.jpg" alt="Hidden Gem Den Haag">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Hidden Gem</span>
+        <h3>China Town</h3>
+        <p>For a unique and vibrant experience, make sure to visit China Town. This hidden gem is packed with local Chinese shops offering a wide variety of foods. Dining here is a must to truly catch the vibe of the neighbourhood.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>

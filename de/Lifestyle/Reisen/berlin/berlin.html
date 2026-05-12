@@ -3,56 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Lifestyle - Berlin</title>
-  <link rel="stylesheet" href="/de/lifestyle/reisen/berlin/berlin.css">
+  <meta name="description" content="Berlin Reisetipps – Übernachtung, Restaurant, Sehenswürdigkeiten und Geheimtipps von Daniel Diezel.">
+  <title>Berlin – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="berlin.css">
 </head>
 <body>
 
   <nav>
     <ul>
-      <li><a href="/de/home.html">Home</a></li>
-      <li><a href="/de/Sport/Sport.html">Sport</a></li>
-      <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/de/Lifestyle/Reisen/travel.html">← Reisen</a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
     </ul>
   </nav>
 
-  <section id="berlin">
-    <h2>Berlin</h2>
-    <div class="city-details">
-      <h3>Übernachtung</h3>
-      <p>
-        <strong>Hotel Astoria Waldorf</strong>
-        Aus meiner persönlichen Perspektive ist das Astoria Waldorf in Berlin die ideale Unterkunft, da es mit seinem makellosen Luxus und der praktischen Lage einen wirklich verwöhnenden und unvergesslichen Aufenthalt bietet.
-        <img src="/de/Lifestyle/images/accommodation_berlin.jpg" alt="Accommodation in Berlin">
-      </p>
+  <div class="page-header">
+    <div class="page-tag">Lifestyle · Reisen</div>
+    <h1>Berlin</h1>
+  </div>
 
-      <h3>Restaurant Tipp</h3>
-      <p>
-        <strong>Bun Sushi Bar</strong>
-        Ich hatte ein großartiges Erlebnis in der Bun Sushi Bar. Das Essen war unglaublich lecker, mit einer Vielfalt an Aromen in jedem Bissen. Das Interior Design war wunderschön und schuf eine angenehme Atmosphäre. Insgesamt war es ein unvergessliches und sehr empfehlenswertes Dinner-Erlebnis.
-        <img src="/de/Lifestyle/images/restaurant_berlin.jpg" alt="Restaurant in Berlin">
-      </p>
-
-      <h3>Sehenswertes</h3>
-      <p>
-        <strong>Brandenburger Tor</strong>
-        
-Das Brandenburger Tor ist ein historisches Wahrzeichen, das wirklich fesselnd ist. Der angrenzende Bundestag verstärkt die politische Bedeutung der Gegend. Der Besuch dieser Wahrzeichen bietet ein unvergessliches Erlebnis und zeigt die reiche Geschichte Berlins sowie die lebendige politische Atmosphäre.
-        <img src="/de/Lifestyle/images/attraction_berlin.jpg" alt="Attraction in Berlin">
-      </p>
-
-      <h3>Geheim Tipp</h3>
-      <p>
-        <strong>Bricks</strong>
-        Wir hatten eine tolle Zeit im Bricks, mit einer lebhaften Atmosphäre und einem energetischen Dancefloor. Obwohl der VIP-Bereich überfüllt war, fanden wir unseren eigenen Platz in der Nähe des Dancefloors und genossen die fantastische Musik und die Drinks. Sehr zu empfehlen, aber es lohnt sich, eine Reservierung für den VIP-Bereich vorzunehmen.
-        <img src="/de/Lifestyle/images/gem_berlin.jpg" alt="Hidden Gem in Berlin">
-      </p>
+  <div class="tips">
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/accommodation_berlin.jpg" alt="Unterkunft Berlin">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Übernachtung</span>
+        <h3>Hotel Astoria Waldorf</h3>
+        <p>Aus meiner persönlichen Perspektive ist das Astoria Waldorf in Berlin die ideale Unterkunft, da es mit seinem makellosen Luxus und der praktischen Lage einen wirklich verwöhnenden und unvergesslichen Aufenthalt bietet.</p>
+      </div>
     </div>
-  </section>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/restaurant_berlin.jpg" alt="Restaurant Berlin">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Restaurant Tipp</span>
+        <h3>Bun Sushi Bar</h3>
+        <p>Ich hatte ein großartiges Erlebnis in der Bun Sushi Bar. Das Essen war unglaublich lecker, mit einer Vielfalt an Aromen in jedem Bissen. Das Interior Design war wunderschön und schuf eine angenehme Atmosphäre – insgesamt ein sehr empfehlenswertes Dinner-Erlebnis.</p>
+      </div>
+    </div>
+
+    <div class="tip">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/attraction_berlin.jpg" alt="Sehenswürdigkeit Berlin">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Sehenswertes</span>
+        <h3>Brandenburger Tor</h3>
+        <p>Das Brandenburger Tor ist ein historisches Wahrzeichen, das wirklich fesselnd ist. Der angrenzende Bundestag verstärkt die politische Bedeutung der Gegend. Der Besuch bietet ein unvergessliches Erlebnis und zeigt die reiche Geschichte Berlins.</p>
+      </div>
+    </div>
+
+    <div class="tip reverse">
+      <div class="tip-img">
+        <img src="/de/Lifestyle/images/gem_berlin.jpg" alt="Geheimtipp Berlin">
+      </div>
+      <div class="tip-body">
+        <span class="tip-label">Geheim Tipp</span>
+        <h3>Bricks</h3>
+        <p>Wir hatten eine tolle Zeit im Bricks, mit einer lebhaften Atmosphäre und einem energetischen Dancefloor. Sehr zu empfehlen, aber es lohnt sich, eine Reservierung für den VIP-Bereich vorzunehmen.</p>
+      </div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
+
 </body>
 </html>
