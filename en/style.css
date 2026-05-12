@@ -292,6 +292,7 @@ footer {
   transform: translateY(-2px);
 }
 
+.footer-copy a { color: var(--accent); text-decoration: none; }
 .footer-copy {
   width: 100%;
   font-size: 0.78rem;

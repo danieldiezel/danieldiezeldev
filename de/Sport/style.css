@@ -214,6 +214,8 @@ footer {
   transform: translateY(-2px);
 }
 
+.footer-copy a { color: var(--accent); text-decoration: none; }
+.footer-copy a { color: var(--accent); text-decoration: none; }
 .footer-copy { width: 100%; font-size: 0.78rem; color: var(--text-muted); padding-top: 4px; }
 
 @media (max-width: 900px) {

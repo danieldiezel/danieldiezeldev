@@ -76,6 +76,8 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
 .social-links { display: flex; gap: 12px; flex-wrap: wrap; }
 .social-link { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--card); border: 1px solid var(--border); border-radius: 100px; color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.82rem; font-weight: 500; transition: all 0.2s; }
 .social-link:hover { background: var(--accent); border-color: var(--accent); color: #fff; transform: translateY(-2px); }
+.footer-copy a { color: var(--accent); text-decoration: none; }
+.footer-copy a { color: var(--accent); text-decoration: none; }
 .footer-copy { width: 100%; font-size: 0.78rem; color: var(--text-muted); padding-top: 4px; }
 
 @media (max-width: 900px) {
