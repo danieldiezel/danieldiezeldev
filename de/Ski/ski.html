@@ -1,56 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Winterliche Website</title>
+  <meta name="description" content="Daniels Ski-Abenteuer – Highlights, Videos und Impressionen aus den Bergen.">
+  <title>Ski – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
+
+  <nav id="navbar">
     <ul>
-      <li><a href="/de/home.html">Home</a></li>
-      <li><a href="/de/Sport/Sport.html">Sport</a></li>
-      <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/de/Sport/Sport.html">← Sport</a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
     </ul>
   </nav>
-    <header>
-        <h1>Daniels Ski Abenteuer</h1>
-        <!-- Snowflakes -->
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <div class="snowflake">&#10052;</div>
-        <!-- Add more snowflakes if desired -->
-      </header>
 
-  <main>
-    <div class="video-container">
+  <section class="hero">
+    <div class="snow">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag">Ski &amp; Berge</div>
+      <h1>Daniels Ski<em>Abenteuer</em></h1>
+      <p class="hero-quote">
+        Genieße die Schönheit des Winters –<br>
+        Momente am Feuer, Lachen in der frischen Bergluft<br>
+        und die Magie der weißen Hänge.
+      </p>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <p class="section-label">Highlights</p>
+    <div class="video-wrap">
       <video controls>
-        <source src="/de/Ski/images/GOPR0756.MP4" type="video/mp4">
-        Dein Browser ist nicht in der Lage dieses Video zu verarbeiten.
+        <source src="images/GOPR0756.MP4" type="video/mp4">
+        Dein Browser unterstützt das Video-Tag nicht.
       </video>
     </div>
+  </section>
 
-    <div class="content">
-      <h2>Grüße aus den Bergen </h2>
-      <p>
-        Genieße die Schönheit des winterlichen Umarmens! Ich wünsche dir gemütliche Momente am Kamin, Lachen in der frischen Luft und die Freude an der Magie der Saison.
-      </p>
-      <img src="/de/Ski/images/1.jpeg" alt="Winter Image 1">
-      <img src="/de/Ski/images/2.jpeg" alt="Winter Image 2">
+  <section class="gallery-section">
+    <p class="section-label">Impressionen</p>
+    <div class="photo-grid">
+      <div class="photo">
+        <img src="images/1.jpeg" alt="Ski Abenteuer">
+      </div>
+      <div class="photo">
+        <img src="images/2.jpeg" alt="Ski Abenteuer">
+      </div>
     </div>
-  </main>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Daniel Diezels Website. All rights reserved.</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 
-  <script src="/de/Ski/script.js"></script>
+  <script>
+    const nav = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+  </script>
 </body>
 </html>
