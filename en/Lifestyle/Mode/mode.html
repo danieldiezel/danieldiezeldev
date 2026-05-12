@@ -1,47 +1,59 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein Lifestyle</title>
-  <link rel="stylesheet" href="/en/lifestyle/mode/mode.css">
+  <meta name="description" content="Daniel's fashion – style, trends and self-expression through fashion.">
+  <title>Fashion – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mode.css">
 </head>
 <body>
 
+  <nav>
+    <ul>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items back"><a href="/en/Lifestyle/life.html">← Lifestyle</a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Sport/Sport.html">Sports</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
+    </ul>
+  </nav>
 
-    <nav>
-      <ul>
-        <li><a href="/en/home.html">Home</a></li>
-        <li><a href="/en/lifestyle/reisen/travel.html">Reisen</a></li>
-        <li><a href="/en/lifestyle/events/events.html">Events</a></li>
-        <li><a href="/en/lifestyle/mode/mode.html">Mode</a></li>
-        <!-- Weitere Navigationspunkte hier hinzufügen -->
-      </ul>
-    </nav>
-    <h1>Welcome to my Lifestyle - Fashion</h1>
-
-  <section id="mode">
-    <h2>Mode</h2>
-    <div class="mode-content">
-      <div class="mode-image">
-        <img src="/en/Lifestyle/images/mode.jpeg" alt="Mode Image">
-      </div>
-      <div class="mode-text">
-        <p>
-            Here I report on the latest fashion trends and my personal style favourites from the fashion world. From stylish outfit ideas for different occasions to tips for the perfect accessory - my fashion section is all about style and self-expression.   </p>
-        <p>
-            My posts contain not only the latest trends, but also practical advice on how to combine garments to achieve the look you want. Whether casual chic for everyday wear, elegant evening wear or casual streetwear - I share my inspirations and secrets for an individual and fashionable appearance.     </p>
-        <p>
-            Fashion is more than just clothes for me; it is an expression of my personality and a way to express myself. I invite you to dive into the fascinating world of fashion with me and discover new styles together.   </p>
-      </div>
+  <div class="editorial">
+    <div class="editorial-img">
+      <img src="/en/Lifestyle/images/mode.jpeg" alt="Daniel Diezel Fashion">
     </div>
-  </section>
-  
-
-  <!-- Weitere Abschnitte zu anderen Aspekten deines Lebens hier einfügen -->
+    <div class="editorial-body">
+      <span class="page-tag">Lifestyle · Fashion</span>
+      <h1>Style &amp; <em>Self-Expression</em></h1>
+      <div class="divider"></div>
+      <p>
+        Here I share the latest fashion trends and my personal style favourites. From stylish outfit ideas for different occasions to tips for the perfect accessory – my fashion section is all about style and self-expression.
+      </p>
+      <p>
+        My posts contain not only the latest trends, but also practical advice on how to combine garments to achieve the look you want. Whether casual chic for everyday wear, elegant evening wear or relaxed streetwear – I share my inspirations for an individual and fashionable appearance.
+      </p>
+      <p>
+        Fashion is more than just clothes for me – it is an expression of my personality and a way to express myself. I invite you to dive into the fascinating world of fashion with me and discover new styles together.
+      </p>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
 </html>
