@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Home -->
+  <url>
+    <loc>https://diezeldaniel.de/de/home.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diezeldaniel.de/de/home.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diezeldaniel.de/en/home.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/home.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diezeldaniel.de/de/home.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diezeldaniel.de/en/home.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sport -->
+  <url>
+    <loc>https://diezeldaniel.de/de/Sport/sport.html</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://diezeldaniel.de/de/Sport/sport.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://diezeldaniel.de/en/Sport/sport.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Sport/sport.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Fussball/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Fussball/index.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Ski/ski.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Ski/ski.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Wassersport/wasser.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Wassersport/wasser.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Lifestyle -->
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/life.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/life.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Events/events.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Events/events.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Mode/mode.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Mode/mode.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Reisen/travel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Reisen/travel.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Reisen/denhaag/denhaag.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Reisen/denhaag/denhaag.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Reisen/berlin/berlin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Reisen/berlin/berlin.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Lifestyle/Reisen/BayrischerWald/bayrischerwald.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Lifestyle/Reisen/bayrischerwald/bayrischerwald.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Schauspiel / Acting -->
+  <url>
+    <loc>https://diezeldaniel.de/de/Actor/appearance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Actor/appearance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Actor/werbung/tilly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Actor/werbung/tilly.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Actor/serien/vss25H.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Actor/serien/vss25H.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/Actor/serien/vss25N.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/Actor/serien/vss25N.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://diezeldaniel.de/de/kontakt.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/kontakt.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Rechtliches -->
+  <url>
+    <loc>https://diezeldaniel.de/de/impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/de/datenschutz.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://diezeldaniel.de/en/datenschutz.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

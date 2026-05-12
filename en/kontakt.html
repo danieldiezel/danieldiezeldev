@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-alt-href="/de/kontakt.html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Daniel Diezel</title>
+  <meta name="description" content="Contact Daniel Diezel for collaboration, casting and general inquiries.">
+  <meta property="og:title" content="Contact – Daniel Diezel">
+  <meta property="og:description" content="Contact Daniel Diezel for collaboration, casting and general inquiries.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="kontakt.css">
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="logo"><a href="/en/home.html">Daniel<span>.</span></a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Sport/Sport.html">Sport</a></li>
+      <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
+    </ul>
+  </nav>
+
+  <main class="contact-wrap">
+    <div class="contact-header">
+      <div class="page-tag">Contact</div>
+      <h1>Get in Touch</h1>
+      <p class="contact-sub">For collaborations, casting inquiries or general questions – I look forward to hearing from you.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">✉</div>
+        <h2>Email</h2>
+        <p>Direct contact for business inquiries and collaborations.</p>
+        <a class="contact-link" href="mailto:management@diezeldaniel.de">management@diezeldaniel.de</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">▶</div>
+        <h2>YouTube</h2>
+        <p>Videos, vlogs and behind-the-scenes content.</p>
+        <a class="contact-link" href="https://www.youtube.com/@diezel.daniel" target="_blank" rel="noopener">@diezel.daniel</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">◎</div>
+        <h2>Instagram</h2>
+        <p>Daily stories, photos and lifestyle moments.</p>
+        <a class="contact-link" href="https://www.instagram.com/diezel.daniel" target="_blank" rel="noopener">@diezel.daniel</a>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">♪</div>
+        <h2>TikTok</h2>
+        <p>Short videos, challenges and entertainment.</p>
+        <a class="contact-link" href="https://www.tiktok.com/@diezel.daniel" target="_blank" rel="noopener">@diezel.daniel</a>
+      </div>
+    </div>
+
+    <div class="contact-form-wrap">
+      <h2>Send a Message</h2>
+      <form class="contact-form" action="mailto:management@diezeldaniel.de" method="post" enctype="text/plain">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Collaboration / Casting / Other">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send message →</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel<span>.</span></div>
+      <div class="social-links">
+        <a class="social-link" href="https://www.youtube.com/@diezel.daniel" target="_blank" rel="noopener">▶ YouTube</a>
+        <a class="social-link" href="https://www.instagram.com/diezel.daniel" target="_blank" rel="noopener">◎ Instagram</a>
+        <a class="social-link" href="https://www.tiktok.com/@diezel.daniel" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© <span id="copy-year"></span> Daniel Diezel. All rights reserved. · <a href="/en/impressum.html">Impressum</a> · <a href="/en/datenschutz.html">Privacy</a></p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("copy-year").textContent=new Date().getFullYear();</script>
+  <script src="/en/javascript/nav-enhance.js"></script>
+</body>
+</html>
