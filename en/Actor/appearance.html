@@ -1,66 +1,89 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniels Schauspielkarriere</title>
+  <meta name="description" content="Daniel Diezel's acting career – appearances, filmography and more.">
+  <title>Acting – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-
   <nav>
     <ul>
-      <li><a href="/en/home.html">Home</a></li>
-      <li><a href="/en/Sport/Sport.html">Sports</a></li>
-      <li><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
-      <li><a href="/en/Actor/appearance.html">Actor appearances</a></li>
+      <li class="logo"><a href="/en/home.html">Daniel <span>D</span></a></li>
+      <li class="items"><a href="/en/home.html">Home</a></li>
+      <li class="items"><a href="/en/Sport/Sport.html">Sports</a></li>
+      <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menu">☰</button></li>
     </ul>
   </nav>
-  <header>
-    <h1>Daniels Actor appearences</h1>
+
+  <header class="page-header">
+    <h1>Acting Career</h1>
+    <p>Daniel is an emerging actor with a deep passion for the performing arts. His goal: to bring complex characters to life and captivate audiences with expressiveness and versatility.</p>
   </header>
-  <main>
-    <section id="about">
+
+  <main class="actor-main">
+    <section class="actor-section">
       <h2>About Daniel</h2>
-      <p>Daniel is an emerging actor with a deep passion for the performing arts that has been with him since childhood. From a young age, he dreamed of appearing on the big screen and evoking emotions through his talent. His enthusiasm for theater and film led him to pursue a rigorous education and continuously hone his craft. With every performance, Daniel aims to portray complex characters and captivate audiences with his expressiveness and versatility. His goal is to bring stories to life and create unforgettable moments for viewers. Determined to make his mark in the film industry, Daniel is committed to turning his dreams into reality.</p>
-    
+      <p>From a young age Daniel dreamed of appearing on the big screen. His enthusiasm for theatre and film led him to continuously hone his craft – with every performance he strives to bring stories to life that move the audience.</p>
     </section>
-    
-    <section id="filmography">
-      <h2>Advertising appearances</h2>
-      <ul>
-        <li><a href="/en/Actor/werbung/tilly.html"><strong>Main Character</strong> - "Autofahrer" (2024) - Tilly Hedrich GmbH</a></li>
+
+    <section class="actor-section">
+      <h2>Advertising Appearances</h2>
+      <ul class="film-list">
+        <li>
+          <a href="/en/Actor/werbung/tilly.html">
+            <strong>Main Character</strong>
+            "Autofahrer" (2024) – Tilly Hedrich GmbH
+          </a>
+        </li>
       </ul>
     </section>
-    
-    <section id="filmography">
+
+    <section class="actor-section">
+      <h2>Series Appearances</h2>
+      <ul class="film-list">
+        <li>
+          <a href="/en/Actor/serien/vss25N.html">
+            <strong>Side Character</strong>
+            "Construction Worker" (2025) – Verstehen Sie Spaß? · ARD
+          </a>
+        </li>
+        <li>
+          <a href="/en/Actor/serien/vss25H.html">
+            <strong>Main Character</strong>
+            "Balloon Supplier" (2025) – Verstehen Sie Spaß? · ARD
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="actor-section">
       <h2>Filmography</h2>
-      <ul>
-      </ul>
+      <p class="film-empty">More projects coming soon.</p>
     </section>
 
-    <section id="filmography">
-        <h2>Series appearances</h2>
-        <ul>
-          <!--     <li><strong>Beste Hauptrolle</strong> - "Der Traumtänzer" (2023) - Filmfest München</li> -->
-          <li><a href="/en/Actor/serien/vss25N.html"><strong>Side Character</strong> - "Construction worker" (2025) - Verstehen Sie Spass</a></li>
-          <li><a href="/en/Actor/serien/vss25H.html"><strong>Main Character</strong> - "Balloon supplier" (2025) - Verstehen Sie Spass</a></li>
-        </ul>
-      </section>
-
-    <section id="awards">
+    <section class="actor-section">
       <h2>Awards</h2>
-      <ul>
-      </ul>
+      <p class="film-empty">Awards to follow.</p>
     </section>
-
   </main>
 
   <footer>
-    <p>&copy; 2025 - Daniels Schauspielkarriere</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. All rights reserved.</p>
+    </div>
   </footer>
-
 </body>
 </html>

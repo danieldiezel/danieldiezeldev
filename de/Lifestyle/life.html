@@ -3,54 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mein Lifestyle</title>
-  <link rel="stylesheet" href="/de/lifestyle/styles.css">
+  <meta name="description" content="Daniels Lifestyle – Reisen, Events und Mode.">
+  <title>Lifestyle – Daniel Diezel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/de/Lifestyle/styles.css">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li class="logo"><a href="/de/home.html">Daniel <span>D</span></a></li>
+      <li class="items"><a href="/de/home.html">Home</a></li>
+      <li class="items"><a href="/de/Sport/Sport.html">Sport</a></li>
+      <li class="items"><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
+      <li class="items"><a href="/de/Actor/appearance.html">Schauspiel</a></li>
+      <li class="btn"><button onclick="document.querySelectorAll('nav .items').forEach(e=>e.classList.toggle('show'))" aria-label="Menü">☰</button></li>
+    </ul>
+  </nav>
 
-   
-    <nav>
-      <ul>
-        <li><a href="/de/home.html">Home</a></li>
-        <li><a href="/de/Sport/Sport.html">Sport</a></li>
-        <li><a href="/de/Lifestyle/life.html">Lifestyle</a></li>
-        <li><a href="/de/Actor/appearance.html">Schauspiel Auftritte</a></li>
-      </ul>
-    </nav>
-    <h1>Willkommen in meinem Leben</h1>
-<div class="container">
-    <div class="item">
-      <a href="/de/lifestyle/reisen/travel.html">
-        <img src="/de/Lifestyle/images/flieger.jpeg" alt="Bild 1">
+  <header class="page-header">
+    <h1>Lifestyle</h1>
+  </header>
+
+  <div class="lifestyle-grid">
+    <a href="/de/Lifestyle/Reisen/travel.html" class="lifestyle-card">
+      <div class="lifestyle-card-img">
+        <img src="/de/images/sa.jpg" alt="Reisen">
+      </div>
+      <div class="lifestyle-card-body">
         <h2>Reisen</h2>
-        <p> Entdecken Sie die besten Tipps zu Hotels, Sehenswürdigkeiten, versteckten Juwelen und Restaurants. Begleiten Sie uns für das beste Erlebnis. </p>
-      </a>
-    </div>
-    <div class="item">
-      <a href="/de/lifestyle/events/events.html">
-        <img src="/de/Lifestyle/images/Oktoberfest23.jpeg" alt="Bild 2">
+        <p>Hotels, Sehenswürdigkeiten, versteckte Juwelen und Restaurants – die besten Tipps für dein nächstes Abenteuer.</p>
+      </div>
+    </a>
+    <a href="/de/Lifestyle/Events/events.html" class="lifestyle-card">
+      <div class="lifestyle-card-img">
+        <img src="/de/images/standup.jpeg" alt="Events">
+      </div>
+      <div class="lifestyle-card-body">
         <h2>Events</h2>
-        <p>Begleite mich zu exklusiven Events und erhalte einen Blick hinter die Kulissen.</p>
-      </a>
-    </div>
-    <div class="item">
-      <a href="/de/lifestyle/mode/mode.html">
-        <img src="/de/Lifestyle/images/mode.jpeg" alt="Bild 3">
+        <p>Exklusive Events und ein Blick hinter die Kulissen – dabei sein, wenn etwas Besonderes passiert.</p>
+      </div>
+    </a>
+    <a href="/de/Lifestyle/Mode/mode.html" class="lifestyle-card">
+      <div class="lifestyle-card-img">
+        <img src="/de/images/insta.jpg" alt="Mode">
+      </div>
+      <div class="lifestyle-card-body">
         <h2>Mode</h2>
-        <p>Entdecke Daniels exklusive Modewelt mit faszinierenden Kollektionen und professionellen Styling-Tipps.</p>
-      </a>
-    </div>
+        <p>Daniels Modewelt: faszinierende Kollektionen, Styling-Tipps und der eigene Look.</p>
+      </div>
+    </a>
   </div>
-  
-  <!-- Weitere Abschnitte zu anderen Aspekten deines Lebens hier einfügen -->
+
   <footer>
-    <h3>Folge mir auf Social Media</h3>
-    <a href="https://www.youtube.com/@diezel.daniel"><img src="/de/images/youtube.jpg" alt="YouTube"></a>
-    <a href="https://www.instagram.com/@diezel.daniel"><img src="/de/images/daniel.png" alt="Instagram"></a>
-    <a href="https://www.tiktok.com/@diezel.daniel"><img src="/de/images/tiktok.jpg" alt="TikTok"></a>
-  </footer>
-  <footer>
-    <p>&copy; 2025 - Mein Lifestyle</p>
+    <div class="footer-inner">
+      <div class="footer-brand">Daniel <span>D</span></div>
+      <div class="social-links">
+        <a href="https://www.youtube.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">▶ YouTube</a>
+        <a href="https://www.instagram.com/diezel.daniel" class="social-link" target="_blank" rel="noopener">◎ Instagram</a>
+        <a href="https://www.tiktok.com/@diezel.daniel" class="social-link" target="_blank" rel="noopener">♪ TikTok</a>
+      </div>
+      <p class="footer-copy">© 2025 Daniel Diezel. Alle Rechte vorbehalten.</p>
+    </div>
   </footer>
 </body>
 </html>
