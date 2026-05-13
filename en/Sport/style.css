@@ -135,7 +135,7 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
 .card-ski {
   background-image: url('/de/images/ski.png');
   background-size: cover;
-  background-position: 65% top;
+  background-position: right top;
   transition: background-position 0.3s;
 }
 
