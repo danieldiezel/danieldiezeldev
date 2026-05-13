@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Daniel Diezel – Fußball, Schauspiel, Lifestyle. Offizielle persönliche Website.">
   <title>Daniel Diezel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/de/style.css">
+  <meta name="description" content="Daniel Diezel – Schauspieler und Content Creator aus Aschaffenburg. 400K+ Follower, TV-Auftritte bei ARD, Werbespot Tilly Hedrich.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://diezeldaniel.de/de/home.html">
   <meta property="og:title" content="Daniel Diezel">
-  <meta property="og:description" content="Fußball, Schauspiel, Lifestyle – Offizielle Website von Daniel Diezel.">
-  <meta property="og:image" content="https://diezeldaniel.de/de/images/main.png">
-  <meta name="description" content="Fußball, Schauspiel, Lifestyle – Offizielle Website von Daniel Diezel.">
+  <meta property="og:description" content="Content. Kamera. Charakter. – Offizielle Website von Daniel Diezel.">
+  <meta property="og:image" content="https://diezeldaniel.de/de/images/daniel.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <nav>
+
+  <nav id="main-nav">
     <ul>
       <li class="logo"><a href="/de/home.html">Daniel <span>Diezel</span></a></li>
       <li class="items"><a href="/de/home.html">Home</a></li>
@@ -32,19 +32,49 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag">400K+ Followers</div>
-    <h1>Willkommen auf<br>Daniels Website</h1>
-    <p class="hero-text">
-      Liebe Follower, vielen Dank für eure großartige Unterstützung und Loyalität. Ihr habt mich auf einem unglaublichen Abenteuer begleitet – und das ist erst der Anfang.
-    </p>
-    <p class="hero-text">
-      Hier findet ihr tiefere Einblicke in mein Leben: Fußball, Schauspiel, Reisen und vieles mehr. Ich freue mich darauf, weiterhin mit euch zu wachsen und unvergessliche Momente zu teilen.
-    </p>
-    <p class="hero-sig">— Daniel</p>
+    <div class="hero-left">
+      <div class="hero-eyebrow">Willkommen</div>
+      <h1 class="hero-name">Daniel<br><span>Diezel.</span></h1>
+      <p class="hero-tagline">
+        <em>Content.</em> &nbsp;<em>Kamera.</em> &nbsp;<em>Charakter.</em>
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="/de/ueber.html">Über mich</a>
+        <a class="btn-secondary" href="/de/Actor/appearance.html">Schauspiel</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="/de/images/daniel.png" alt="Daniel Diezel" loading="eager">
+    </div>
   </section>
 
-  <p class="section-label">Entdecke mehr</p>
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-box">
+      <div class="stat-num">400K<em>+</em></div>
+      <div class="stat-label">Follower</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">3</div>
+      <div class="stat-label">TV & Film Rollen</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">9<em>+</em></div>
+      <div class="stat-label">Jahre Content</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Plattformen</div>
+    </div>
+  </div>
+
+  <!-- SECTION CARDS -->
+  <div class="section-intro">
+    <span class="eyebrow">Entdecke mehr</span>
+    <h2>Was dich erwartet.</h2>
+  </div>
 
   <div class="cards-grid">
     <a href="/de/Sport/Sport.html" class="card">
@@ -70,6 +100,35 @@
     </a>
   </div>
 
+  <!-- SOCIAL -->
+  <section class="social-section">
+    <span class="eyebrow">Social Media</span>
+    <h2>Folg mir auf</h2>
+    <div class="social-grid">
+      <a class="social-card" href="https://www.youtube.com/@diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">▶</span>
+        <div class="social-card-info">
+          <div class="social-card-name">YouTube</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+      <a class="social-card" href="https://www.instagram.com/diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">◎</span>
+        <div class="social-card-info">
+          <div class="social-card-name">Instagram</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+      <a class="social-card" href="https://www.tiktok.com/@diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">♪</span>
+        <div class="social-card-info">
+          <div class="social-card-name">TikTok</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">Daniel <span>Diezel</span></div>
@@ -81,7 +140,14 @@
       <p class="footer-copy">© <span id="copy-year"></span> Daniel Diezel. Alle Rechte vorbehalten. · <a href="/de/impressum.html">Impressum</a> · <a href="/de/datenschutz.html">Datenschutz</a></p>
     </div>
   </footer>
-<script>document.getElementById("copy-year").textContent=new Date().getFullYear();</script>
-<script src="/de/javascript/nav-enhance.js"></script>
+
+  <script>
+    var nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/de/javascript/nav-enhance.js"></script>
 </body>
 </html>

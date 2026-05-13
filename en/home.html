@@ -3,27 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Daniel Diezel – Football, Acting, Lifestyle. Official personal website.">
   <title>Daniel Diezel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/en/style.css">
+  <meta name="description" content="Daniel Diezel – actor and content creator from Aschaffenburg. 400K+ followers, TV appearances on ARD, Tilly Hedrich commercial.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://diezeldaniel.de/en/home.html">
   <meta property="og:title" content="Daniel Diezel">
-  <meta property="og:description" content="Football, Acting, Lifestyle – Official Website of Daniel Diezel.">
-  <meta property="og:image" content="https://diezeldaniel.de/de/images/main.png">
-  <meta name="description" content="Football, Acting, Lifestyle – Official Website of Daniel Diezel.">
+  <meta property="og:description" content="Content. Camera. Character. – Official website of Daniel Diezel.">
+  <meta property="og:image" content="https://diezeldaniel.de/de/images/daniel.png">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <nav>
+
+  <nav id="main-nav">
     <ul>
       <li class="logo"><a href="/en/home.html">Daniel <span>Diezel</span></a></li>
       <li class="items"><a href="/en/home.html">Home</a></li>
-      <li class="items"><a href="/en/Sport/Sport.html">Sports</a></li>
+      <li class="items"><a href="/en/Sport/Sport.html">Sport</a></li>
       <li class="items"><a href="/en/Lifestyle/life.html">Lifestyle</a></li>
       <li class="items"><a href="/en/Actor/appearance.html">Acting</a></li>
       <li class="items"><a href="/en/ueber.html">About</a></li>
@@ -32,25 +32,55 @@
     </ul>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag">400K+ Followers</div>
-    <h1>Welcome to<br>Daniel's Website</h1>
-    <p class="hero-text">
-      Dear followers, thank you so much for your incredible support and loyalty. You've accompanied me on an amazing adventure – and this is just the beginning.
-    </p>
-    <p class="hero-text">
-      Here you'll find deeper insights into my life: football, acting, travel and much more. I look forward to continuing to grow with you and sharing unforgettable moments.
-    </p>
-    <p class="hero-sig">— Daniel</p>
+    <div class="hero-left">
+      <div class="hero-eyebrow">Welcome</div>
+      <h1 class="hero-name">Daniel<br><span>Diezel.</span></h1>
+      <p class="hero-tagline">
+        <em>Content.</em> &nbsp;<em>Camera.</em> &nbsp;<em>Character.</em>
+      </p>
+      <div class="hero-cta">
+        <a class="btn-primary" href="/en/ueber.html">About me</a>
+        <a class="btn-secondary" href="/en/Actor/appearance.html">Acting</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="/de/images/daniel.png" alt="Daniel Diezel" loading="eager">
+    </div>
   </section>
 
-  <p class="section-label">Discover more</p>
+  <!-- STATS -->
+  <div class="stats-bar">
+    <div class="stat-box">
+      <div class="stat-num">400K<em>+</em></div>
+      <div class="stat-label">Followers</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">3</div>
+      <div class="stat-label">TV & Film Roles</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">9<em>+</em></div>
+      <div class="stat-label">Years of Content</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Platforms</div>
+    </div>
+  </div>
+
+  <!-- SECTION CARDS -->
+  <div class="section-intro">
+    <span class="eyebrow">Explore</span>
+    <h2>What's waiting for you.</h2>
+  </div>
 
   <div class="cards-grid">
     <a href="/en/Sport/Sport.html" class="card">
-      <img src="/de/images/Fussball.jpeg" alt="Sports" loading="lazy">
+      <img src="/de/images/Fussball.jpeg" alt="Sport" loading="lazy">
       <div class="card-overlay">
-        <div class="card-title">Sports</div>
+        <div class="card-title">Sport</div>
         <div class="card-arrow">→</div>
       </div>
     </a>
@@ -70,6 +100,35 @@
     </a>
   </div>
 
+  <!-- SOCIAL -->
+  <section class="social-section">
+    <span class="eyebrow">Social Media</span>
+    <h2>Follow me on</h2>
+    <div class="social-grid">
+      <a class="social-card" href="https://www.youtube.com/@diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">▶</span>
+        <div class="social-card-info">
+          <div class="social-card-name">YouTube</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+      <a class="social-card" href="https://www.instagram.com/diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">◎</span>
+        <div class="social-card-info">
+          <div class="social-card-name">Instagram</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+      <a class="social-card" href="https://www.tiktok.com/@diezel.daniel" target="_blank" rel="noopener">
+        <span class="social-card-icon">♪</span>
+        <div class="social-card-info">
+          <div class="social-card-name">TikTok</div>
+          <div class="social-card-handle">@diezel.daniel</div>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <footer>
     <div class="footer-inner">
       <div class="footer-brand">Daniel <span>Diezel</span></div>
@@ -81,7 +140,14 @@
       <p class="footer-copy">© <span id="copy-year"></span> Daniel Diezel. All rights reserved. · <a href="/en/impressum.html">Impressum</a> · <a href="/en/datenschutz.html">Privacy</a></p>
     </div>
   </footer>
-<script>document.getElementById("copy-year").textContent=new Date().getFullYear();</script>
-<script src="/en/javascript/nav-enhance.js"></script>
+
+  <script>
+    var nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/en/javascript/nav-enhance.js"></script>
 </body>
 </html>
