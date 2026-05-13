@@ -30,7 +30,7 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
 
 /* ── HERO ── */
 .about-hero {
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
