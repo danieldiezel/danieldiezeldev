@@ -30,7 +30,7 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
 
 /* ── HERO ── */
 .about-hero {
-  min-height: 100vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
@@ -43,6 +43,7 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
   justify-content: center;
   padding: calc(var(--nav-h) + 40px) 60px 60px 40px;
   background: var(--bg);
+  overflow: hidden;
 }
 .hero-left::after {
   content: '';
