@@ -132,6 +132,13 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
 
 .card:hover img { transform: scale(1.06); }
 
+.card-ski {
+  background-image: url('/de/images/ski.png');
+  background-size: cover;
+  background-position: 65% top;
+  transition: background-position 0.3s;
+}
+
 .card-overlay {
   position: absolute;
   inset: 0;
