@@ -75,7 +75,7 @@ nav ul .btn button { background: none; border: none; color: #fff; font-size: 1.4
 .btn-secondary:hover { color: #fff; border-color: rgba(255,255,255,0.4); }
 
 .hero-right { position: relative; overflow: hidden; }
-.hero-right img { position: absolute; bottom: 0; left: 0; width: 100%; height: auto; display: block; }
+.hero-right img { position: absolute; bottom: 5cm; left: 0; width: 100%; height: auto; display: block; }
 .hero-right::before {
   content: '';
   position: absolute; inset: 0;
